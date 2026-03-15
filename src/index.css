@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream-white text-gray-900;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply backdrop-blur-md bg-white/70 border border-white/20;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-dark-green to-green-600 bg-clip-text text-transparent;
+  }
+}
