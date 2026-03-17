@@ -86,31 +86,14 @@ const Matcha = () => {
   };
 
   // Handle form submission
-  const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  if (!emailError && formData.name && formData.email && formData.message) {
-
-    const { data, error } = await supabase
-      .from("contacts")
-      .insert([
-        {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message
-        }
-      ]);
-
-    if (error) {
-      console.log(error);
-      alert("Error sending message");
-    } else {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!emailError && formData.name && formData.email && formData.message) {
       setIsFormSubmitted(true);
       setTimeout(() => setIsFormSubmitted(false), 3000);
       setFormData({ name: '', email: '', message: '' });
     }
-  }
-};
+  };
 
   // Enhanced testimonials data
   const testimonials = [
