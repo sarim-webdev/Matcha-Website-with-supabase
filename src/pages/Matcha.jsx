@@ -4,7 +4,6 @@ import { FiMenu, FiX, FiChevronRight, FiChevronLeft, FiChevronUp } from 'react-i
 import { FaInstagram, FaFacebook, FaTwitter, FaLeaf, FaStar, FaQuoteRight, FaCheckCircle } from 'react-icons/fa';
 import { MdOutlineLocalShipping, MdOutlineSecurity, MdOutlineSupportAgent, MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 import { BsCupHot, BsFlower1, BsLightningCharge, BsArrowRight } from 'react-icons/bs';
-import { supabase } from "../config/supabase"
 import matchaImage from "../assets/matcha-image.webp"
 import matchaVideo from "../assets/videos/matcha-bg.mp4"
 
