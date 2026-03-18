@@ -408,7 +408,7 @@ const Matcha = () => {
         </motion.div>
       </section>
 
-      {/* About Section - Reduced gap between text and image */}
+      {/* About Section - Using space-evenly */}
       <section id="about" className="relative py-32 px-6 bg-black overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 opacity-30">
@@ -434,13 +434,14 @@ const Matcha = () => {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-20">
+          <div className="flex flex-col lg:flex-row justify-evenly items-center gap-8 lg:gap-4 mb-20">
             {/* Left Column */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true, margin: "-100px" }}
+              className="w-full lg:w-5/12"
             >
               <h3 className="text-3xl font-bold text-white mb-6 tracking-tight">
                 The Art of Japanese Tea Ceremony
@@ -490,7 +491,7 @@ const Matcha = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="relative mt-8 lg:mt-0"
+              className="relative w-full lg:w-5/12 mt-8 lg:mt-0"
               style={{ y: imageY }}
             >
               <motion.div
